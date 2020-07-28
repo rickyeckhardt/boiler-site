@@ -4,6 +4,7 @@
   font-weight: 800;
   letter-spacing: -0.05rem;
   margin: 1rem 0;
+  color: rgba(34, 34, 90, 1);
 }
 
 .headingXl {
@@ -49,4 +50,10 @@
 
 .lightText {
   color: #999;
+}
+
+.hero {
+  padding: 4rem 0;
+  max-width: 50rem;
+  margin: 0 auto;
 }

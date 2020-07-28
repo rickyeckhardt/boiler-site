@@ -25,3 +25,33 @@ img {
   max-width: 100%;
   display: block;
 }
+
+h1,
+h2 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  color: white;
+}
+
+h2 {
+  font-weight: normal;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  padding: 0.6em 1em;
+  background: rgba(34, 34, 90, 1);
+  color: white;
+  border-radius: 4px;
+  border: none;
+  font-size: 1rem;
+  line-height: 1.6rem;
+}
+
+b {
+  color: white !important;
+}
