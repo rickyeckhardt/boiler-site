@@ -28,7 +28,7 @@ export default function Home({ allPostsData }) {
           BoilerStack helps you get up and running quickly for your next Node.js
           project. Pick the stack, download the template, and start building.
         </h2>
-        <button>Download v0.0.0</button>
+        <button>Download v0.0.1</button>
       </section>
     </Layout>
   );
