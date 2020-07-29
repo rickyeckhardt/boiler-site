@@ -12,7 +12,18 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.hero}>
-        <h1>The web's tastiest full stack boilerplates for Node.js</h1>
+        <div className={utilStyles.heroContainer}>
+          <div className={utilStyles.heroText}>
+            <h1 className={utilStyles.h1HeroText}>
+              The web's tastiest full stack boilerplates for Node.js
+            </h1>
+          </div>
+          <div className={utilStyles.heroImage}>
+            <img src="/images/undraw_ice_cream_s2rh.svg" alt="Ice Cream"></img>
+          </div>
+        </div>
+      </section>
+      <section className={utilStyles.heroSubtext}>
         <h2>
           BoilerStack helps you get up and running quickly for your next Node.js
           project. Pick you stack, download the template, and start building.

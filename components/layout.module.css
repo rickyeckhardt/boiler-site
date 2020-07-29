@@ -1,5 +1,5 @@
 .container {
-  padding: 0;
+  padding: 1rem 0 1.5rem 0;
   margin: 0;
   background: #e980ff;
 }
@@ -7,7 +7,9 @@
 .header {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
+  max-width: 60rem;
+  margin: 0 auto;
 }
 
 .headerImage {
@@ -22,4 +24,24 @@
 
 .backToHome {
   margin: 3rem 0 0;
+}
+
+.containerLayout {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+  gap: 1px 1.25rem;
+  grid-template-areas: "logo nav";
+}
+
+.logo {
+  grid-area: logo;
+}
+
+.navBar {
+  grid-area: nav;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  margin: 1rem;
 }

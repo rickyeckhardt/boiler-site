@@ -54,6 +54,35 @@
 
 .hero {
   padding: 4rem 0;
-  max-width: 50rem;
+  max-width: 60rem;
   margin: 0 auto;
+}
+
+.heroContainer {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 1px 1.25rem;
+  grid-template-areas: "text image";
+}
+
+.heroText {
+  grid-area: text;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroImage {
+  grid-area: image;
+}
+
+.h1HeroText {
+  max-height: 144px;
+  text-align: center;
+}
+
+.heroSubtext {
+  max-width: 50rem;
+  margin: 0 auto 2rem auto;
 }

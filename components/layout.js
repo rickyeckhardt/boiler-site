@@ -26,39 +26,30 @@ export default function Layout({ children, home }) {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <header className={styles.header}>
-        {home ? (
-          <>
+        <div className={styles.containerLayout}>
+          <div className={styles.logo}>
             <h1 className={utilStyles.heading2Xl}>
               Boiler<b>Stack</b>
             </h1>
-          </>
-        ) : (
-          <>
-            <Link href="/">
-              <a>
-                <img
-                  src="/images/profile.jpg"
-                  className={`${styles.headerImage} ${utilStyles.borderCircle}`}
-                  alt={name}
-                />
-              </a>
-            </Link>
-            <h2 className={utilStyles.headingLg}>
-              <Link href="/">
-                <a className={utilStyles.colorInherit}>{name}</a>
-              </Link>
-            </h2>
-          </>
-        )}
+          </div>
+          <div className={styles.navBar}>
+            <nav>
+              <ul>
+                <li>
+                  <a href="#">Source Code</a>
+                </li>
+                <li>
+                  <a href="#">Docs</a>
+                </li>
+                <li>
+                  <a href="#">About</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
       </header>
       <main>{children}</main>
-      {!home && (
-        <div className={styles.backToHome}>
-          <Link href="/">
-            <a>← Back to home</a>
-          </Link>
-        </div>
-      )}
     </div>
   );
 }
