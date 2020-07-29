@@ -26,7 +26,7 @@ export default function Home({ allPostsData }) {
       <section className={utilStyles.heroSubtext}>
         <h2>
           BoilerStack helps you get up and running quickly for your next Node.js
-          project. Pick the stack, download the template, and start building.
+          project. Pick you stack, download the template, and start building.
         </h2>
         <button>Download v0.0.1</button>
       </section>
